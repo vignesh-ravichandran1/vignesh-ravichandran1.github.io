@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #007BFF;
+    background-color: #3498db; /* Updated color */
     padding: 1em 0;
     text-align: center;
     color: #fff;
@@ -25,7 +25,7 @@ section {
 }
 
 h1, h2, h3 {
-    color: #007BFF;
+    color: #3498db; /* Updated color */
 }
 
 h1 {
@@ -46,7 +46,7 @@ li {
 }
 
 a {
-    color: #007BFF;
+    color: #3498db; /* Updated color */
     text-decoration: none;
     font-weight: bold;
 }
