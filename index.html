@@ -6,179 +6,256 @@
     <title>Vignesh Ravichandran – Lead Software Engineer</title>
     <meta name="description" content="Vignesh Ravichandran is a Lead Software Engineer in Toronto building payment and fintech systems with Java and Spring.">
     <meta property="og:title" content="Vignesh Ravichandran – Lead Software Engineer">
-    <meta property="og:description" content="Java and Spring engineer building payment and fintech systems in Toronto.">
+    <meta property="og:description" content="Java and Spring engineer building payment systems in Toronto.">
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://vignesh-ravichandran1.github.io/">
-    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#07090f">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="hero">
-        <div class="container">
-            <p class="eyebrow">Toronto, Canada</p>
-            <h1>Vignesh Ravichandran</h1>
-            <p class="tagline">Lead Software Engineer · Java &amp; Spring · Payments and fintech</p>
-            <nav class="contact" aria-label="Contact links">
-                <a href="mailto:vignesshh@gmail.com">
-                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-                    Email
-                </a>
-                <a href="https://www.linkedin.com/in/vignesh-ravichandran1/" target="_blank" rel="noopener">
-                    <svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V21h-4z"/></svg>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/vignesh-ravichandran1" target="_blank" rel="noopener">
-                    <svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
-                    GitHub
-                </a>
+    <div class="bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid"></div>
+    </div>
+
+    <header class="nav">
+        <div class="container nav-inner">
+            <a class="brand" href="#top" aria-label="Home"><span class="brand-dot"></span>vignesh<span class="muted">.r</span></a>
+            <nav aria-label="Sections">
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact" class="nav-cta">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main id="main" class="container">
-        <section aria-labelledby="about">
-            <h2 id="about">About</h2>
-            <p>
-                I'm a Lead Software Engineer at Interac Corp, where I build the backend systems behind Interac e-Transfer
-                and the Enhanced Reconciliation File (ERF) that Canadian financial institutions use to reconcile payments.
+    <main id="main">
+        <section class="hero container" id="top">
+            <p class="kicker reveal"><span class="pulse"></span>Lead Software Engineer · Toronto, Canada</p>
+            <h1 class="reveal">
+                Hi, I'm Vignesh.<br>
+                <span class="gradient-text">I build payment systems that move money across Canada.</span>
+            </h1>
+            <p class="lede reveal">
+                I build backend systems in Java and Spring for Interac e-Transfer, including the reconciliation files
+                that Canadian banks rely on every day. Before that, I built API platforms from scratch for telecom and
+                enterprise customers.
             </p>
-            <p>
-                I've spent my career building Java and Spring services. That includes REST microservices built
-                test-first, batch pipelines, and API contracts written with OpenAPI. Before Interac, I built the Cronus
-                Platform from scratch at Telna. At Wipro, I worked on enterprise systems for Hewlett Packard Enterprise
-                and Mitsubishi Fuso.
-            </p>
+            <div class="hero-actions reveal">
+                <a class="btn btn-primary" href="#projects">View projects <span aria-hidden="true">→</span></a>
+                <button class="btn btn-ghost" type="button" onclick="window.print()">Print resume <span aria-hidden="true">↓</span></button>
+            </div>
+            <ul class="socials reveal" aria-label="Contact links">
+                <li><a href="mailto:vignesshh@gmail.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/vignesh-ravichandran1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V21h-4z"/></svg>
+                </a></li>
+                <li><a href="https://github.com/vignesh-ravichandran1" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+                </a></li>
+            </ul>
         </section>
 
-        <section aria-labelledby="experience">
-            <h2 id="experience">Experience</h2>
+        <section class="container section" id="experience" aria-labelledby="experience-title">
+            <p class="eyebrow reveal">01 · Experience</p>
+            <h2 id="experience-title" class="reveal">Where I've worked</h2>
+
             <ol class="timeline">
-                <li>
-                    <div class="role-head">
-                        <h3>Lead Software Engineer · <span class="org">Interac Corp</span></h3>
-                        <p class="meta">Jul 2021 – Present · Toronto, Canada</p>
+                <li class="job reveal">
+                    <div class="job-when">
+                        <span class="badge badge-live">Current</span>
+                        <span>Jul 2021 – Present</span>
                     </div>
-                    <p class="project">e-Transfer &amp; Enhanced Reconciliation File (ERF)</p>
-                    <ul>
-                        <li>Developed a Spring Batch application that generates the Enhanced Reconciliation File for Canadian financial institutions.</li>
-                        <li>Built APIs from OpenAPI specifications for Interac e-Transfer version 3.6.</li>
-                    </ul>
+                    <div class="job-body">
+                        <h3>Lead Software Engineer <span class="at">@ Interac Corp</span></h3>
+                        <p class="job-where">Toronto, Canada · e-Transfer &amp; Enhanced Reconciliation File (ERF)</p>
+                        <ul>
+                            <li>Developed a Spring Batch application that generates the Enhanced Reconciliation File for Canadian financial institutions.</li>
+                            <li>Built APIs from OpenAPI specifications for Interac e-Transfer version 3.6.</li>
+                        </ul>
+                        <ul class="chips"><li>Java</li><li>Spring Batch</li><li>OpenAPI</li><li>AWS</li></ul>
+                    </div>
                 </li>
-                <li>
-                    <div class="role-head">
-                        <h3>Senior Software Engineer · <span class="org">Telna Inc</span></h3>
-                        <p class="meta">Jan 2020 – Jul 2021 · Toronto, Canada</p>
+                <li class="job reveal">
+                    <div class="job-when"><span>Jan 2020 – Jul 2021</span></div>
+                    <div class="job-body">
+                        <h3>Senior Software Engineer <span class="at">@ Telna Inc</span></h3>
+                        <p class="job-where">Toronto, Canada · Cronus Platform</p>
+                        <ul>
+                            <li>Built a RESTful, API-based platform from scratch using Spring Boot microservices.</li>
+                            <li>Used test-driven design to deliver features for telecom customers.</li>
+                            <li>Received the Employee of the Month award (February 2021).</li>
+                        </ul>
+                        <ul class="chips"><li>Spring Boot</li><li>Microservices</li><li>TDD</li></ul>
                     </div>
-                    <p class="project">Cronus Platform</p>
-                    <ul>
-                        <li>Built a RESTful, API-based platform from scratch using Spring Boot microservices.</li>
-                        <li>Used test-driven design to deliver features for telecom customers.</li>
-                        <li>Received the Employee of the Month award (February 2021).</li>
-                    </ul>
                 </li>
-                <li>
-                    <div class="role-head">
-                        <h3>Senior Software Engineer · <span class="org">Wipro Technologies</span></h3>
-                        <p class="meta">Chennai, India</p>
+                <li class="job reveal">
+                    <div class="job-when"><span>Chennai, India</span></div>
+                    <div class="job-body">
+                        <h3>Senior Software Engineer <span class="at">@ Wipro Technologies</span></h3>
+                        <p class="job-where">Hewlett Packard Enterprise · Mitsubishi Fuso</p>
+                        <ul>
+                            <li>Contributed to the Next Generation Quoter (CPQ) for Hewlett Packard Enterprise.</li>
+                            <li>Contributed to the Dealer Management System for Mitsubishi Fuso.</li>
+                            <li>Received the Virtuoso Award for Project Stream from the Vice President &amp; Global Head.</li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>Contributed to the Next Generation Quoter (CPQ) for Hewlett Packard Enterprise.</li>
-                        <li>Contributed to the Dealer Management System for Mitsubishi Fuso.</li>
-                        <li>Received the Virtuoso Award for Project Stream from the Vice President &amp; Global Head.</li>
-                    </ul>
                 </li>
             </ol>
         </section>
 
-        <section aria-labelledby="projects">
-            <h2 id="projects">Personal projects</h2>
+        <section class="container section" id="projects" aria-labelledby="projects-title">
+            <p class="eyebrow reveal">02 · Projects</p>
+            <h2 id="projects-title" class="reveal">Things I've built on my own time</h2>
+
             <div class="cards">
-                <article class="card">
-                    <h3><a href="https://github.com/vignesh-ravichandran1/Analysis_Tool" target="_blank" rel="noopener">Investment Analysis Tool</a></h3>
+                <a class="card card-feature reveal" href="https://github.com/vignesh-ravichandran1/Analysis_Tool" target="_blank" rel="noopener">
+                    <div class="card-top">
+                        <span class="card-icon" aria-hidden="true">📈</span>
+                        <span class="card-link" aria-hidden="true">↗</span>
+                    </div>
+                    <h3>Investment Analysis Tool</h3>
                     <p>
-                        A valuation web app for US and Canadian stocks. It pulls financial data from SEC EDGAR filings and exchange rates
-                        from the Bank of Canada, then runs the numbers with deterministic DCF and expected-return (IRR) models. Every
-                        data point is labelled with how reliable it is.
+                        A valuation web app for US and Canadian stocks. It pulls financial data from SEC EDGAR filings and
+                        exchange rates from the Bank of Canada, then runs deterministic DCF and expected-return (IRR) models.
+                        Every data point is labelled with how reliable it is.
                     </p>
-                    <ul class="tags" aria-label="Technologies">
-                        <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Next.js</li><li>TypeScript</li><li>Docker</li>
-                    </ul>
-                </article>
-                <article class="card">
-                    <h3><a href="https://github.com/vignesh-ravichandran1/walmart-monitor" target="_blank" rel="noopener">Walmart Stock Monitor</a></h3>
+                    <ul class="chips"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Next.js</li><li>TypeScript</li><li>Docker</li></ul>
+                </a>
+                <a class="card reveal" href="https://github.com/vignesh-ravichandran1/walmart-monitor" target="_blank" rel="noopener">
+                    <div class="card-top">
+                        <span class="card-icon" aria-hidden="true">🛒</span>
+                        <span class="card-link" aria-hidden="true">↗</span>
+                    </div>
+                    <h3>Walmart Stock Monitor</h3>
                     <p>
-                        A scheduled GitHub Actions job that checks a product page every 30 minutes and sends an email when the item
-                        comes back in stock. Credentials are stored as GitHub secrets.
+                        A scheduled GitHub Actions job that checks a product page every 30 minutes and emails me when the
+                        item comes back in stock.
                     </p>
-                    <ul class="tags" aria-label="Technologies">
-                        <li>Python</li><li>GitHub Actions</li><li>BeautifulSoup</li>
-                    </ul>
-                </article>
-                <article class="card">
-                    <h3><a href="https://github.com/vignesh-ravichandran1/Mars_Rover" target="_blank" rel="noopener">Mars Rover</a></h3>
+                    <ul class="chips"><li>Python</li><li>GitHub Actions</li><li>BeautifulSoup</li></ul>
+                </a>
+                <a class="card reveal" href="https://github.com/vignesh-ravichandran1/Mars_Rover" target="_blank" rel="noopener">
+                    <div class="card-top">
+                        <span class="card-icon" aria-hidden="true">🚀</span>
+                        <span class="card-link" aria-hidden="true">↗</span>
+                    </div>
+                    <h3>Mars Rover</h3>
                     <p>
-                        A solution to the classic Mars Rover exercise that steers rovers around a grid. It also covers three stretch
-                        goals: grid boundaries, multiple rovers, and avoiding boulders.
+                        The classic rover-on-a-grid exercise, plus three stretch goals: grid boundaries, multiple rovers, and
+                        avoiding boulders.
                     </p>
-                    <ul class="tags" aria-label="Technologies">
-                        <li>Java</li>
-                    </ul>
-                </article>
+                    <ul class="chips"><li>Java</li></ul>
+                </a>
             </div>
         </section>
 
-        <section aria-labelledby="skills">
-            <h2 id="skills">Skills</h2>
-            <dl class="skills">
-                <div>
-                    <dt>Languages &amp; frameworks</dt>
-                    <dd>Java, Spring Boot, Spring Batch, React, Python, TypeScript</dd>
+        <section class="container section" id="skills" aria-labelledby="skills-title">
+            <p class="eyebrow reveal">03 · Skills</p>
+            <h2 id="skills-title" class="reveal">What I work with</h2>
+
+            <div class="skill-grid">
+                <div class="skill-group reveal">
+                    <h3>Languages &amp; frameworks</h3>
+                    <ul class="chips chips-lg"><li>Java</li><li>Spring Boot</li><li>Spring Batch</li><li>React</li><li>Python</li><li>TypeScript</li></ul>
                 </div>
-                <div>
-                    <dt>Cloud &amp; delivery</dt>
-                    <dd>AWS Fargate, AWS Lambda, Docker, Bamboo, GitHub Actions</dd>
+                <div class="skill-group reveal">
+                    <h3>Cloud &amp; delivery</h3>
+                    <ul class="chips chips-lg"><li>AWS Fargate</li><li>AWS Lambda</li><li>Docker</li><li>Bamboo</li><li>GitHub Actions</li></ul>
                 </div>
-                <div>
-                    <dt>Data &amp; observability</dt>
-                    <dd>MySQL, PostgreSQL, ELK Stack (Elasticsearch, Logstash, Kibana), Prometheus</dd>
+                <div class="skill-group reveal">
+                    <h3>Data &amp; observability</h3>
+                    <ul class="chips chips-lg"><li>MySQL</li><li>PostgreSQL</li><li>ELK Stack</li><li>Prometheus</li></ul>
                 </div>
-                <div>
-                    <dt>APIs, security &amp; testing</dt>
-                    <dd>OpenAPI, REST, Auth0 SSO, Apache JMeter, test-driven development</dd>
+                <div class="skill-group reveal">
+                    <h3>APIs, security &amp; testing</h3>
+                    <ul class="chips chips-lg"><li>OpenAPI</li><li>REST</li><li>Auth0 SSO</li><li>Apache JMeter</li><li>TDD</li></ul>
                 </div>
-            </dl>
+            </div>
         </section>
 
-        <section aria-labelledby="education">
-            <h2 id="education">Education &amp; awards</h2>
-            <ul class="plain">
-                <li>
-                    <strong>B.Tech, Electronics &amp; Communication</strong><br>
-                    <span class="meta">Amity University, Uttar Pradesh, India</span>
-                </li>
-                <li>
-                    <strong>Employee of the Month</strong>, Telna (February 2021) –
-                    <a href="https://www.linkedin.com/posts/telna_wearetelna-teamtelna-activity-6778698841681096704-owR8" target="_blank" rel="noopener">view announcement</a>
-                </li>
-                <li>
-                    <strong>Virtuoso Award</strong>, Project Stream, from the Vice President &amp; Global Head, Wipro Technologies
-                </li>
-            </ul>
+        <section class="container section" id="education" aria-labelledby="education-title">
+            <p class="eyebrow reveal">04 · Background</p>
+            <h2 id="education-title" class="reveal">Education &amp; awards</h2>
+
+            <div class="awards">
+                <div class="award reveal">
+                    <span class="award-icon" aria-hidden="true">🎓</span>
+                    <div>
+                        <h3>B.Tech, Electronics &amp; Communication</h3>
+                        <p>Amity University, Uttar Pradesh, India</p>
+                    </div>
+                </div>
+                <div class="award reveal">
+                    <span class="award-icon" aria-hidden="true">🏆</span>
+                    <div>
+                        <h3>Employee of the Month</h3>
+                        <p>Telna, February 2021 ·
+                            <a href="https://www.linkedin.com/posts/telna_wearetelna-teamtelna-activity-6778698841681096704-owR8" target="_blank" rel="noopener">view announcement ↗</a></p>
+                    </div>
+                </div>
+                <div class="award reveal">
+                    <span class="award-icon" aria-hidden="true">⭐</span>
+                    <div>
+                        <h3>Virtuoso Award</h3>
+                        <p>Project Stream, from the Vice President &amp; Global Head, Wipro Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section contact" id="contact" aria-labelledby="contact-title">
+            <div class="contact-card reveal">
+                <p class="eyebrow">05 · Contact</p>
+                <h2 id="contact-title">Let's build something <span class="gradient-text">reliable</span>.</h2>
+                <p>Have a role, a project, or a question? My inbox is open.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="mailto:vignesshh@gmail.com">Say hello <span aria-hidden="true">→</span></a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/vignesh-ravichandran1/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="year">2026</span> Vignesh Ravichandran</p>
-            <p><a href="#main">Back to top</a></p>
-        </div>
+    <footer class="container footer">
+        <p>&copy; <span id="year">2026</span> Vignesh Ravichandran</p>
+        <p class="mono">Built with plain HTML &amp; CSS</p>
     </footer>
 
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Fade sections in as they scroll into view
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if ('IntersectionObserver' in window && !reduceMotion) {
+            document.documentElement.classList.add('js-reveal');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        }
+
+        // Make the card glow follow the cursor
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('pointermove', e => {
+                const rect = card.getBoundingClientRect();
+                card.style.setProperty('--mx', `${e.clientX - rect.left}px`);
+                card.style.setProperty('--my', `${e.clientY - rect.top}px`);
+            });
+        });
+    </script>
 </body>
 </html>
